@@ -4,7 +4,7 @@
 void check(char [], int); 
 int main()
 {
-    char s[1000];  
+    char s[500];  
     printf("Enter  the string : ");
     scanf("%s",s);
     check(s,0);
@@ -19,10 +19,9 @@ void check(char s[], int c)
     {
     	if(s[i]==s[n-i-1])
     	c++;
- 
- 	}
- 	if(c==i)
- 	    printf("string is palindrome");
+    }
+    if(c==i)
+ 	printf("string is palindrome");
     else
         printf("string is not palindrome");
 }
